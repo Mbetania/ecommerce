@@ -1,4 +1,5 @@
 import React from 'react'
+import Count from '../components/unit/Count'
 
 const ItemDetail = ({array}) => {
 return (
@@ -14,7 +15,8 @@ return (
                         <h5 className='card-title'>{item?.species}</h5>
                         <p className='cardt-text'>{item?.status}</p>  
                     </div>
-                {/* <span>{item?.origin.name}</span> */}
+                    <span>{item?.origin.name}</span>
+                    <Count stock={3} initial={1}/>
                 {/* <p>{product?.precio}</p> */}
                 </div>
 

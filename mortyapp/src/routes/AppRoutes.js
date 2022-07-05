@@ -4,6 +4,7 @@ import {BrowserRouter, Routes,Route} from 'react-router-dom'
 import { NavBar } from '../components/shop/NavBar';
 import ItemDetailContainer from '../pages/ItemDetailContainer';
 import ItemListContainer from '../pages/ItemListContainer';
+import Calculator from '../components/unit/Calculator'
 
 function AppRoutes() {
   return (
@@ -12,6 +13,7 @@ function AppRoutes() {
         <Route path= '/*' element={<NavBar/>}/>
         <Route path= 'carts' element={<ItemDetailContainer/>}/>
         <Route path='category' element={<ItemListContainer/>} />
+        <Route path='shop' element={<Calculator/>} />
       </Routes>
     </BrowserRouter>
   );
