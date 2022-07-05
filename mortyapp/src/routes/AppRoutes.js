@@ -9,7 +9,7 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path= '/' element={<NavBar/>}/>
+        <Route path= '/*' element={<NavBar/>}/>
         <Route path= 'carts' element={<ItemDetailContainer/>}/>
         <Route path='category' element={<ItemListContainer/>} />
       </Routes>

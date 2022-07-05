@@ -19,11 +19,7 @@ const ItemListContainer = () => {
             .catch((error) =>{toast.error('Error al traer cuadros', error)})
             .finally(()=> setLoading(false))
     }, [])
-    // if (loading){
-    //     return <h2>cargando</h2>
-    // } else{
-    //     return <ItemList isLoading={loading} productos={items}/>
-    // }
+
       return (
         <div>
             <h2>Bienvenido</h2>
@@ -33,11 +29,6 @@ const ItemListContainer = () => {
             <ItemList items={items}/>
             )}
             
-            {/* <ul>
-                {items.map((producto) =>{
-                return <li>{producto.nombre}</li>
-                })}
-            </ul> */}
         </div>
       )
     }
