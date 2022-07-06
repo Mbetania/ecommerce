@@ -13,12 +13,17 @@ const Count = ({miProp, stock, initial, onAdd}) => {
             setCount(count-1)
         }
     }
+    const handlerReset = () => {
+        setCount(0)
+    }
 return (
     <>
         <div>{miProp}</div>
         {/* <h1>{numero}</h1> */}
+        {/* <input type="text" onKeyUp={handleKeyUp} /> */}
+        <span> mi contador va : {count}</span>
         <button onClick={handlerClickAdd}> + </button>
-        <span>{count}</span>
+        <button onClick={handlerReset}>resetear</button>
         <button onClick={handlerClickSubtrack}> - </button>
     </>
 )

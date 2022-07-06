@@ -1,7 +1,7 @@
 import React from 'react'
 import {getData} from '../mocks/productos'
 import { useEffect, useState } from 'react'
-import ItemList from '../detail/ItemList'
+import ItemList from '../components/detail/ItemList'
 import { toast } from 'react-toastify'
 import { useParams } from 'react-router'
 

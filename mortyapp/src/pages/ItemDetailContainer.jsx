@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import { toast } from 'react-toastify'
-import ItemDetail from '../detail/ItemDetail'
+import ItemDetail from '../components/detail/ItemDetail'
 
 
 

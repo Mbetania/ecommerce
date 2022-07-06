@@ -2,12 +2,12 @@ import React from 'react'
 import Item from '../detail/Item'
 import Count from '../unit/Count'
 
-const ItemList = ({ products }) => {
+const ItemList = ({ items }) => {
   return (
     <section>
             
             <>
-                {products?.map((producto) => {
+                {items?.map((producto) => {
                     return <Item key={producto.id} producto={producto} />
                     
                 })}
