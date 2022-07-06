@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom'
 import Count from '../unit/Count'
 
 const Item = ({producto}) => {
-    console.log('produ', producto)
+
+
+
   return (
     <article >
             <h2>{producto.title}</h2>
@@ -12,7 +14,7 @@ const Item = ({producto}) => {
             <p>Precio: ${producto.price}</p>
             <Link to={`/producto/${producto.category}`}>Ver detalle</Link>
             <Count stock={5} initial={1} />
-        </article>
+    </article>
   )
 }
 
